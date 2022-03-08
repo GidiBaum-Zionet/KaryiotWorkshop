@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLib/CommonLib.iml" filepath="$PROJECT_DIR$/CommonLib/CommonLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/KaryiotWorkshop.iml" filepath="$PROJECT_DIR$/KaryiotWorkshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LineIntersection/LineIntersection.iml" filepath="$PROJECT_DIR$/LineIntersection/LineIntersection.iml" />
     </modules>
   </component>
 </project>
