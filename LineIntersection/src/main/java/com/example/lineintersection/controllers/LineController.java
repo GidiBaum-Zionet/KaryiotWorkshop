@@ -1,5 +1,7 @@
 package com.example.lineintersection.controllers;
 
+import com.example.common.math.LineSegment;
+import com.example.common.math.LineSegmentIntersection;
 import com.example.common.math.Vector2d;
 import com.example.lineintersection.views.ResizableCanvas;
 import javafx.fxml.FXML;
@@ -73,6 +75,17 @@ public class LineController implements Initializable {
         drawPoint(pix3, 9);
 
         drawLine(pix2, pix3);
+
+        var segment0 = new LineSegment(p0, p1);
+        var segment1 = new LineSegment(p2, p3);
+
+        var intersectionPoint = LineSegmentIntersection.intersect(segment0, segment1);
+
+        if (intersectionPoint != null) {
+            intersectionPoint = toCanvasPixel(intersectionPoint);
+            gc.setFill(Color.RED);
+            drawPoint(intersectionPoint, 13);
+        }
 
     }
 
