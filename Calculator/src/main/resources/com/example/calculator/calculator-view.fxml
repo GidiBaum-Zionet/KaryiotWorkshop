@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.GridPane?>
+<?import java.net.URL?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.calculator.controllers.CalculatorController">
+
+    <stylesheets>
+        <URL value="@calculator-view.css" />
+    </stylesheets>
+
+
+    <top>
+        <Label fx:id="label">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+    </top>
+
+    <center>
+        <GridPane>
+            <Button styleClass="btn" fx:id="button1" text="1" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Button styleClass="btn" fx:id="button2" text="2" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Button styleClass="btn" fx:id="button3" text="3" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+            <Button styleClass="btn" fx:id="button4" text="4" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Button styleClass="btn" fx:id="button5" text="5" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Button styleClass="btn" fx:id="button6" text="6" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+            <Button styleClass="btn" fx:id="button7" text="7" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Button styleClass="btn" fx:id="button8" text="8" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Button styleClass="btn" fx:id="button9" text="9" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+            <Button styleClass="btn" fx:id="button0" text="0" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+
+            <Button styleClass="btn" fx:id="buttonPlus" text="+" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+            <Button styleClass="btn" fx:id="buttonMinus" text="-" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+            <Button styleClass="btn" fx:id="buttonEqual" text="=" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+            <Button styleClass="btn" fx:id="buttonClear" text="C" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+        </GridPane>
+
+    </center>
+
+</BorderPane>

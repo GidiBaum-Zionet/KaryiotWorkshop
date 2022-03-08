@@ -1,0 +1,15 @@
+.label {
+    -fx-min-width: 240;
+    -fx-font-size: 26;
+    -fx-padding: 5;
+    -fx-background-color: #265446;
+    -fx-text-fill: #ffffff;
+}
+
+.btn {
+    -fx-min-width: 60;
+    -fx-min-height: 60;
+    -fx-font-size: 26;
+    -fx-background-size: 18 18;
+    -fx-background-position:left;
+}
