@@ -5,6 +5,8 @@ import com.example.springdemo.models.StudentModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/student")
 public class StudentController {
@@ -14,6 +16,14 @@ public class StudentController {
     public StudentController(IStudentService studentService){
 
         this.studentService = studentService;
+    }
+
+    @GetMapping("/all")
+     public ResponseEntity<List<StudentModel>> getStudents(){
+
+        var students = studentService.getStudents();
+
+        return ResponseEntity.ok(students);
     }
 
     @GetMapping()
