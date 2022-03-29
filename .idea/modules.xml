@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CommonLib/CommonLib.iml" filepath="$PROJECT_DIR$/CommonLib/CommonLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/KaryiotWorkshop.iml" filepath="$PROJECT_DIR$/KaryiotWorkshop.iml" />
       <module fileurl="file://$PROJECT_DIR$/LineIntersection/LineIntersection.iml" filepath="$PROJECT_DIR$/LineIntersection/LineIntersection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elements/elements.iml" filepath="$PROJECT_DIR$/elements/elements.iml" />
       <module fileurl="file://$PROJECT_DIR$/springDemo/springDemo.iml" filepath="$PROJECT_DIR$/springDemo/springDemo.iml" />
     </modules>
   </component>

@@ -11,17 +11,20 @@
         <module name="LineIntersection" />
         <module name="springDemo" />
         <module name="Calculator" />
+        <module name="elements" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Calculator" target="17" />
       <module name="CommonLib" target="17" />
+      <module name="elements" target="17" />
       <module name="LineIntersection" target="17" />
       <module name="springDemo" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elements" options="-parameters" />
       <module name="springDemo" options="-parameters" />
     </option>
   </component>
