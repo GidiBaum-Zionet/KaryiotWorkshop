@@ -1,4 +1,4 @@
-package com.example.elements.services.controllers;
+package com.example.elements.controllers;
 
 import com.example.elements.services.ICalcService;
 import org.slf4j.Logger;

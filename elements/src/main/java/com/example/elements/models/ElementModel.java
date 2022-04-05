@@ -4,9 +4,11 @@ import com.example.elements.entities.ElementEntity;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
 @Builder
-public class ElementModel {
+public class ElementModel implements Serializable {
 
     private String symbol;
     private String name;

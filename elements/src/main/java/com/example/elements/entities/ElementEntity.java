@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class ElementEntity {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long pid;
 
     private String symbol;

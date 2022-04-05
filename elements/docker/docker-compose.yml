@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+
+  #------------------------ Redis --------------------------
+  redis:
+    image: redis:6.2-alpine
+    container_name: elements.redis
+    restart: always
+    ports:
+      - '6379:6379'
+    #    command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+    command: redis-server
+    volumes:
+      - redis:/data
+
+  #------------------------ mySql --------------------------
+
+  mysql:
+    image: mysql:5.7
+    container_name: elements.mysql
+    restart: always
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: qwerty
+    networks:
+      - default
+    ports:
+      - "3306:3306"
+
+#------------------------ Volumes --------------------------
+volumes:
+  redis:
+    driver: local
+  mysql_data:
+    driver: local
+
+#------------------------ networks --------------------------
+networks:
+  default:
+    name: elements
+
