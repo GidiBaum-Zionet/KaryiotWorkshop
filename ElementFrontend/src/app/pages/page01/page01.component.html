@@ -1,0 +1,21 @@
+<h1>page01 works!</h1>
+
+<button mat-raised-button color="warn" class="btn" (click)="load()">Load</button>
+
+<div>
+
+  <table class="table" *ngIf="elementTable.elements.length > 0">
+
+    <tr>
+      <th>Z</th>
+      <th>Symbol</th>
+      <th>Name</th>
+    </tr>
+
+    <tr *ngFor="let e of elementTable.elements">
+      <td>{{e.z}}</td>
+      <td>{{e.symbol}}</td>
+      <td>{{e.name}}</td>
+    </tr>
+  </table>
+</div>

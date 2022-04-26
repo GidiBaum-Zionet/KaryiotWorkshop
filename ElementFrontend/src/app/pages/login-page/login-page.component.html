@@ -1,0 +1,29 @@
+<div class="login-page-container" (keydown.enter)="ExecuteLogin()">
+
+  <div class="login-container" >
+
+    <div class="Title">
+      <H1> Welcome to Chemi-Calc</H1>
+    </div>
+
+    <mat-form-field >
+      <input matInput type="text" [(ngModel)]="login" autocomplete="off">
+      <mat-placeholder class="placeholder">Login</mat-placeholder>
+    </mat-form-field>
+
+    <mat-form-field >
+      <input matInput type="password" [(ngModel)]="password" autocomplete="off">
+      <mat-placeholder class="placeholder">Password</mat-placeholder>
+    </mat-form-field>
+
+    <div class="button">
+
+      <button mat-button  (click)="ExecuteLogin()"> Login </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+

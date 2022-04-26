@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommonLib/CommonLib.iml" filepath="$PROJECT_DIR$/CommonLib/CommonLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElementFrontend.iml" filepath="$PROJECT_DIR$/ElementFrontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/KaryiotWorkshop.iml" filepath="$PROJECT_DIR$/KaryiotWorkshop.iml" />
       <module fileurl="file://$PROJECT_DIR$/LineIntersection/LineIntersection.iml" filepath="$PROJECT_DIR$/LineIntersection/LineIntersection.iml" />
       <module fileurl="file://$PROJECT_DIR$/elements/elements.iml" filepath="$PROJECT_DIR$/elements/elements.iml" />

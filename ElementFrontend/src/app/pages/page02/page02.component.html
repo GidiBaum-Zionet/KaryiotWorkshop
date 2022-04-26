@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <h1>page02 works!</h1>
+
+  <mat-form-field >
+    <input matInput type="text" [(ngModel)]="formula" autocomplete="off">
+    <mat-placeholder class="placeholder">Formula</mat-placeholder>
+  </mat-form-field>
+
+  <mat-form-field >
+    <input matInput type="text" [(ngModel)]="name" autocomplete="off">
+    <mat-placeholder class="placeholder">Name</mat-placeholder>
+  </mat-form-field>
+
+  <div>
+    <button mat-raised-button (click)="parseFormula()"> Calculate </button>
+  </div>
+
+  <table class="table" *ngIf="molecule">
+
+    <tr>
+      <th>N</th>
+      <th>Symbol</th>
+      <th>Name</th>
+    </tr>
+
+    <tr *ngFor="let p of molecule?.elementCounts">
+      <td>{{p.number}}</td>
+      <td>{{p.element.symbol}}</td>
+      <td>{{p.element.name}}</td>
+    </tr>
+  </table>
+
+</div>

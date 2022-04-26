@@ -60,7 +60,7 @@ public class ElementController {
 
 
     @PostMapping(value = "/material")
-    @PreAuthorize("hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     public ResponseEntity<MaterialModel> parseFormula(@RequestBody AddMaterialModel model) {
         var material = elementService.addMaterial(model.getFormula(), model.getName());
         return new ResponseEntity<>(material, HttpStatus.OK);
